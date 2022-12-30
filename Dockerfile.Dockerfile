@@ -1,9 +1,9 @@
 FROM gradle:7.4.0-jdk17
 
-WORKDIR /app
+WORKDIR /GitRep
 
-COPY /app .
+COPY /GitRep .
 
 RUN gradle installDist
 
-CMD ./build/install/app/bin/app
+CMD ./GitRep
