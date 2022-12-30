@@ -1,9 +1,9 @@
 FROM gradle:7.4.0-jdk17
 
-WORKDIR /run.bat
+WORKDIR /app
 
-COPY /run.bat
+COPY /app .
 
 RUN gradle installDist
 
-CMD ./run.bat
+CMD ./build/install/app/bin/app
