@@ -1,1 +1,0 @@
-java -jar target/untitled4-1.0-SNAPSHOT.jar
