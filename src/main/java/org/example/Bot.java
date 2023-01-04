@@ -32,7 +32,7 @@ public class Bot extends TelegramLongPollingBot {
         System.out.println(user.getFirstName() + " " + user.getLastName() + " wrote " + msg.getText());
         System.out.println(user.getId());
         if(botVar.Check == true) {
-            botVar.sendText(userId, "Hello1," + " "+ user.getFirstName()+" "+user.getLastName());
+            botVar.sendText(userId, "Hello," + " "+ user.getFirstName()+" "+user.getLastName());
             Check = false;
         }
 
